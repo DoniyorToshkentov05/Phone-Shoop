@@ -1,0 +1,94 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    height: 685px;
+    background-color: #fff;
+    margin: 0 70px 40px 0px;
+    cursor: pointer;
+}
+
+.item img {
+    width: 400px;
+    margin-bottom: 15px;
+    margin-top: -43px;
+}
+
+.item p {
+    margin-bottom: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; 
+    -webkit-box-orient: vertical;
+}
+
+.item p:hover {
+    color:rgba(0, 0, 0, 0.8);
+}
+
+.item h3 {
+    margin-bottom: 10px;
+}
+
+.item:hover {
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.item span {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.name {
+    color:grey;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.floatRigth {
+    position: relative;
+    left: 90%;
+    top: 10px;
+    z-index: 10;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	margin: 15px;
+}
+
+.price span {
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+
+.active * {
+    display: flex;
+    justify-content: end;
+    fill: tomato;
+}
+
+@media (max-width: 460px) {
+    .item {
+        width: 250px;
+        height: 400px;
+        margin: 0px 20px 10px 20px;
+    }
+    .item img {
+        width: 250px;
+    }
+    
+    .item h2 {
+        font-size: 1.2em;
+    }
+    
+}

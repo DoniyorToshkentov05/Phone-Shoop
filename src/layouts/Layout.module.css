@@ -1,0 +1,15 @@
+.wrapper {
+    background-color: white;
+    margin: 0 20px;
+}
+
+.content {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 645px) {
+    .wrapper {
+       width: calc(100vw - 30px);
+       margin-top: 15px; 
+    }
+}

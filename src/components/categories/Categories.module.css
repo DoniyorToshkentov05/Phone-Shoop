@@ -1,0 +1,28 @@
+.categories {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+
+.categories li {
+    text-decoration: none;
+    list-style-type: none;
+    border-left: 3px solid transparent;
+    padding: 12px;
+    width: 250px;
+    cursor: pointer;
+}
+
+.categories .active {
+    border-left: 3px solid black;
+    /* background-color: black;
+    
+    color: white; */
+}
+
+@media (max-width: 450px) {
+    .categories li {
+        width: 90%;
+    }
+}
